@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+*.env
+
+# Tooling
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local runtime artifacts
+_ehr_log.jsonl
