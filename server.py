@@ -37,7 +37,6 @@ ASSEMBLYAI_WS_URL = (
     "?speech_model=u3-rt-pro"
     "&encoding=pcm_mulaw"
     "&sample_rate=8000"
-    "&format_turns=true"
 )
 
 SYSTEM_PROMPT = (
@@ -81,7 +80,7 @@ async def media_stream(twilio_ws: WebSocket):
 
     aai_ws = await websockets.connect(
         ASSEMBLYAI_WS_URL,
-        extra_headers={"Authorization": ASSEMBLYAI_API_KEY},
+        additional_headers={"Authorization": ASSEMBLYAI_API_KEY},
     )
 
     try:
